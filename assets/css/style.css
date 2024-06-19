@@ -3,6 +3,7 @@
   
 
 /* Asterisk wildcard selector to override defualt styles added by the browser */
+    
 * {
     padding: 0;
     margin: 0;
@@ -42,9 +43,7 @@ h1 {
     letter-spacing: 2px;
     color: #252525;
     #menu {
-        font-size: 110px;
-        letter-spacing: 4px;
-        list-style-type: none ;
+        display: flex
     }
     #menu>li {
         margin-bottom: 1em;
@@ -86,4 +85,13 @@ main {
 /*Footer*/
 footer {
     background-color: aquamarine;
+} /* Media query tablets and larger (768px and up) */
+@media screen and (min-width 768px) (
+/*Header*/
+nav {
+    display:block
+    position:relative
+    box-shadow: none
+    width: fit-content 
+    padding-right:1rem;
 }
